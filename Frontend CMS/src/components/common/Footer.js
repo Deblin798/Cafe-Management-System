@@ -13,20 +13,21 @@ const Footer = () => {
           bgcolor: "#333",
           color: "white",
           padding: "20px",
-          position: "fixed", 
-          bottom: "0", 
-          width: "100%" 
+          position: "fixed",
+          bottom: "0",
+          width: "100%",
+          zIndex: 9999, // Add z-index to ensure the footer appears above the content
         }}
       >
         <Box
           sx={{
             my: 2,
             "& svg": { fontSize: "60px", cursor: "pointer", mr: 2 },
-            "& svg:hover":{
-                color:'black',
-                transform:'translateX(5px)',
-                transition:'all 400ms'
-            }
+            "& svg:hover": {
+              color: "black",
+              transform: "translateX(5px)",
+              transition: "all 400ms",
+            },
           }}
         >
           {/* icons */}
@@ -41,3 +42,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
